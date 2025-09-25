@@ -1,0 +1,32 @@
+
+        @font-face {
+          font-family: 'Rowdies-Light';
+          src: url('animation/Rowdies-Light.ttf') format('truetype');
+        }
+        .nav-link {
+  color: black;
+  transition: all 0.3s ease;
+  font-family: 'Rowdies-Light';
+}
+
+.nav-link:not(.fw-bold):hover {
+  color: white;
+  background-color: #F8AF18;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: 'Rowdies-Light';
+  
+}
+  @font-face {
+          font-family: 'Rowdies-Light';
+          src: url('animation/Rowdies-Light.ttf') format('truetype');
+        }
+
+.nav-link.fw-bold {
+  border-bottom: 3px solid #F8AF18;
+}
+
+.navbar-nav {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 15px;
+}

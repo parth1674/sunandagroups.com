@@ -1,0 +1,93 @@
+ <link rel="stylesheet" href="nav.css">
+<nav class="navbar navbar-expand-lg navbar-light px-4" id="mainNavbar" style="height:15vh; border-bottom-left-radius: 3vi; border-bottom-right-radius: 3vi; background-color: transparent; transition: background-color 0.3s; width: 100%">
+  <a class="navbar-brand" href="index.html">
+    <img src="WhatsApp_Image_2025-04-28_at_14.34.16_90ad2c9c-removebg-preview.webp" alt="Transparent Logo" id="transparentLogo" style="display: block; position: absolute; top: 0.05%; left: 1vw; height:15vh; width: 50vh; padding: 0 1vw;" />
+    <img src="image-removebg-preview (1).webp" alt="Sunanda Logo" style="display: none; position: absolute; top: -0.05%; left: 1vw; height:18vh; width: 47vh; padding: 0 1vw;"  id="mainLogo" />
+   
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ms-3">
+        <a class="nav-link " href="index.html" style="position: relative; color: white;" id="homeLink">Home</a>
+      </li>
+      <li class="nav-item ms-3">
+        <a class="nav-link " href="aboutus.html" style="position: relative; color: white;" id="aboutLink">About us</a>
+      </li>
+      <li class="nav-item ms-3">
+        <a class="nav-link " href="projects.html" style="position: relative; color: white;" id="portfolioLink">Portfolio</a>
+      </li>
+      <li class="nav-item ms-3">
+        <a class="nav-link " href="services.html" style="position: relative; color: white;" id="servicesLink">Services</a>
+      </li>
+      <li class="nav-item ms-3">
+        <a class="nav-link fw-bold" href="getintouch.html" style="position: relative; color: white;" id="contactLink">Get in touch</a>
+      </li>
+    </ul>
+  </div>
+
+
+ <script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('mainNavbar');
+    const homeLink = document.getElementById('homeLink');
+    const servicesLink = document.getElementById('servicesLink');
+    const portfolioLink = document.getElementById('portfolioLink');
+    const aboutLink = document.getElementById('aboutLink');
+    const contactLink = document.getElementById('contactLink');
+    const links = [homeLink, servicesLink, portfolioLink, aboutLink, contactLink];
+    const mainLogo = document.getElementById('mainLogo');
+    const transparentLogo = document.getElementById('transparentLogo');
+
+    if (window.scrollY > 80) {
+      navbar.style.backgroundColor = 'white';
+      links.forEach(link => {
+        link.style.color = 'black';
+        link.style.transition = 'color 0.3s ease-in-out';
+        link.style.fontFamily='Rowdies-Light';
+      });
+      mainLogo.style.display = 'block';
+      transparentLogo.style.display = 'none';
+    } else {
+      navbar.style.backgroundColor = 'transparent';
+      links.forEach(link => {
+        link.style.color = 'white';
+        link.style.transition = 'color 0.3s ease-in-out';
+        link.style.fontFamily='Rowdies-Light';
+      });
+      mainLogo.style.display = 'none';
+      transparentLogo.style.display = 'block';
+    }
+  });
+  
+  function toggleDesktopContainer() {
+   const mainLogo = document.getElementById('mainLogo');
+    const transparentLogo = document.getElementById('transparentLogo');
+    const footerSunada = document.getElementById('footersunada');
+  if (window.innerWidth <= 400) {
+    mainLogo.style.height ='15vh'
+    mainLogo.style.width = '70vw';
+    mainLogo.style.marginLeft='-8vw';
+    transparentLogo.style.height = '12vh';
+    transparentLogo.style.width = '67vw';
+  
+
+   } else{
+    mainLogo.style.height = '18vh';
+    mainLogo.style.width = '47vh';
+    transparentLogo.style.height = '15vh';
+    transparentLogo.style.width = '50vh'; 
+    transparentLogo.style.marginTop = '0vh';
+    mainLogo.style.top = '-1vh';
+    mainLogo.style.marginLeft = '1vw';  
+  
+  }
+  }
+
+  window.addEventListener('DOMContentLoaded', toggleDesktopContainer);
+  window.addEventListener('resize', toggleDesktopContainer);
+  document.querySelector('.navbar').classList.add('fixed-top', 'shadow-sm');
+</script>
+</nav>

@@ -1,0 +1,241 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Zoom Stacked Cards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: #d0f0f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .card-container {
+      position: relative;
+      width: 700px;
+      height: 220px;
+    }
+
+    .card {
+      position: absolute;
+      top: 0;
+      width: 120px;
+      height: 180px;
+      background: #00bcd4;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, left 0.4s ease, z-index 0s;
+      cursor: pointer;
+    }
+
+    .card:nth-child(1) { left: 0px; z-index: 1; }
+    .card:nth-child(2) { left: 30px; z-index: 2; }
+    .card:nth-child(3) { left: 60px; z-index: 3; }
+    .card:nth-child(4) { left: 90px; z-index: 4; }
+    .card:nth-child(5) { left: 120px; z-index: 5; }
+    .card:nth-child(6) { left: 150px; z-index: 6; }
+
+    .card-container:hover .card {
+      transition: transform 0.4s ease, left 0.4s ease;
+    }
+
+    .card.zoom {
+      transform: scale(1.2) translateY(-20px);
+      z-index: 100;
+    }
+
+    .card.zoom ~ .card {
+      left: calc(30px + 60px * (var(--i)));
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Auto Zoom Cards Effect</h1>
+
+  <div class="card-container" id="cardContainer">
+    <div class="card" style="--i: 0;"></div>
+    <div class="card" style="--i: 1;"></div>
+    <div class="card" style="--i: 2;"></div>
+    <div class="card" style="--i: 3;"></div>
+    <div class="card" style="--i: 4;"></div>
+    <div class="card" style="--i: 5;"></div>
+  </div>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <model-viewer 
+    src="windmill.glb" 
+    alt="A 3D model of an astronaut" 
+    auto-rotate 
+    camera-controls 
+    style="width: 100%; height: 400px; margin-top: 20px;">
+  </model-viewer>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      cards.forEach(card => card.classList.remove('zoom'));
+      cards[currentIndex].classList.add('zoom');
+      currentIndex = (currentIndex + 1) % cards.length;
+    }, 3000);
+  </script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Choose Us</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Container */
+    .choose-us-container {
+      background: url('Solar-Power-and-Energy-Independenc.jpg') no-repeat center center/cover;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      animation: zoomBackground 10s infinite alternate ease-in-out;
+      transform-style: preserve-3d;
+    }
+
+    /* Image breathing zoom effect */
+    @keyframes zoomBackground {
+      0% {
+        transform: scale(1) rotateX(0deg) rotateY(0deg);
+      }
+      50% {
+        transform: scale(1.1) rotateX(5deg) rotateY(5deg);
+      }
+      100% {
+        transform: scale(1) rotateX(0deg) rotateY(0deg);
+      }
+    }
+
+    /* Card Box */
+    .choose-box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 1;
+    }
+
+    /* Overlay */
+    .choose-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: all 3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .choose-overlay h5 {
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.5rem;
+      transition: transform 0.5s ease;
+    }
+
+    /* Active Hover */
+    .active-hover .choose-overlay {
+      opacity: 1;
+      background: rgba(255, 204, 0, 0.7);
+    }
+
+    .active-hover .choose-overlay h5 {
+      transform: scale(1.2);
+    }
+
+    /* Pause animation on hover */
+    .choose-us-container:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container text-center my-5">
+  <h2 class="fw-bold">Why choose us ?</h2>
+</div>
+
+<div class="container choose-us-container">
+  <div class="choose-box">
+    <div class="choose-overlay">
+      <h5>Blueprinted</h5>
+    </div>
+  </div>
+  <div class="choose-box">
+    <div class="choose-overlay">
+      <h5>Zero Space Hassle</h5>
+    </div>
+  </div>
+  <div class="choose-box">
+    <div class="choose-overlay">
+      <h5>Eco Efficient</h5>
+    </div>
+  </div>
+  <div class="choose-box">
+    <div class="choose-overlay">
+      <h5>GreenCred</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS for Auto Hover -->
+<script>
+  const boxes = document.querySelectorAll('.choose-box');
+  let current = 0;
+
+  function autoHover() {
+    boxes.forEach(box => box.classList.remove('active-hover'));
+    boxes[current].classList.add('active-hover');
+    current = (current + 1) % boxes.length;
+  }
+
+  setInterval(autoHover, 2000); // Every 2 seconds
+</script>
+
+</body>
+</html> -->

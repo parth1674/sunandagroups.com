@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Sunanda Renewables - Solar, Wind & BESS Solutions in Hyderabad, India</title>
+    <meta name="description" content="Sunanda Renewables specializes in clean, sustainable solar power, wind energy, and advanced battery energy storage systems (BESS). Powering a greener tomorrow for homes and industries in Hyderabad, India." />
+    <meta name="keywords" content="Sunanda Renewables, solar energy, wind energy, renewable power, battery energy storage, BESS, sustainable energy, clean energy, green energy, India, Hyderabad, solar farms, wind turbines, eco-efficient, energy solutions, power purchase agreements" />
+    <meta name="author" content="Sunanda Renewables Pvt. Ltd." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sunandagroups.com/aboutus.html" />
+
+    <meta property="og:title" content="Sunanda Renewables - Leading Solar, Wind & BESS Solutions in Hyderabad,India" />
+    <meta property="og:description" content="Empowering homes and businesses in Hyderabad, India with clean, renewable solar, wind, and advanced battery energy storage solutions from Sunanda Renewables. Discover sustainable energy partnerships." />
+    <meta property="og:image" content="assets/sunandaabout.webp" /> <meta property="og:image:alt" content="Solar panels and wind turbines representing renewable energy solutions by Sunanda Renewables" />
+    <meta property="og:url" content="https://sunandagroups.com/aboutus.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sunanda Renewables" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sunanda Rene wables - Clean Energy Solutions in Hyderabad" />
+    <meta name="twitter:description" content="We provide clean solar, wind, and battery energy storage solutions across Hyderabad and India. Partner with Sunanda Renewables for a sustainable energy future." />
+    <meta name="twitter:image" content="assets/sunandaabout.webp" /> <meta name="twitter:image:alt" content="Renewable energy infrastructure: solar panels and wind turbines" />
+
+    <link rel="icon" href="assets/logocropped-removebg-preview.png" type="image/png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="footerstyle.css"> <style>
+        /* Custom Fonts */
+        @font-face {
+            font-family: 'Rowdies-Light';
+            src: url('animation/Rowdies-Light.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Inknut Antiqua';
+            src: url('animation/InknutAntiqua-ExtraBold.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex; /* Added for footer positioning */
+            flex-direction: column; /* Added for footer positioning */
+            min-height: 100vh; /* Added for footer positioning */
+        }
+
+        /* Navbar Styles */
+        .nav-link {
+            color: black;
+            transition: all 0.3s ease;
+            font-family: 'Rowdies-Light';
+        }
+
+        .nav-link:not(.fw-bold):hover {
+            color: white;
+            background-color: #F8AF18;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-family: 'Rowdies-Light';
+        }
+
+        .nav-link.fw-bold {
+            border-bottom: 3px solid #F8AF18;
+        }
+
+        .navbar-nav {
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 15px;
+        }
+
+        /* Hero Banner Styles */
+        .hero-banner {
+            background: url("assets/sunandaabout.webp") no-repeat center center/cover; /* Ensure this path is correct */
+            height: 500px;
+            display: flex;
+            align-items: center; /* Vertically center content */
+            text-align: left; /* Align text to left */
+            color: #fff;
+            position: relative;
+        }
+
+        .hero-banner h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-top: 20vh;
+            font-style: italic;
+            font-family: 'Inknut Antiqua', serif; /* Corrected font-family reference */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for readability */
+        }
+
+        .hero-banner p {
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Added text shadow for readability */
+        }
+
+        /* General Section Headings */
+        .section-heading {
+            color: #183665;
+            font-family: 'Inknut Antiqua', serif;
+            font-weight: 800;
+        }
+
+        /* Info boxes */
+        .contact-icon {
+            color: #208fa2;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            color: #f4cc70;
+            transform: scale(1.2);
+        }
+
+        /* Footer specific styles (ensure these match footerstyle.css or are added there) */
+        .footer-sunada {
+            background-color: #183665; /* Example: Dark blue background */
+            padding: 40px 0;
+            color: white;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+        .footer-sunada .contact-icon {
+            color: #ffff;
+        }
+        .footer-sunada a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-sunada a:hover {
+            color: #f4cc70; /* Hover color for footer links */
+        }
+
+
+        /* 3D Execution Process specific styles (from aboutus.css if any, or define here) */
+        .execution-title {
+            margin-top: 20px;
+            color: #183665;
+            font-family: 'Inknut Antiqua', serif;
+            font-weight: 800;
+        }
+
+        .execution-subtitle h5 {
+            color: #183665;
+            font-family: 'Inknut Antiqua', serif;
+            font-weight: 800;
+            margin-top: 15px;
+        }
+
+        /* Vision Mission Values Section */
+        .vision-mission-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .vision-mission-section h2 {
+            color: #183665;
+            font-family: 'Inknut Antiqua', serif;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .vision-mission-section > p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .vision-mission-section .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .vision-mission-section .custom-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .vision-mission-section .custom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .vision-mission-section .custom-card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .vision-mission-section .custom-card.vision i {
+            color: #fcaf17;
+        }
+
+        .vision-mission-section .custom-card.mission i {
+            color: #208fa2;
+        }
+
+        .vision-mission-section .custom-card.values i {
+            color: #183665;
+        }
+
+        .vision-mission-section .custom-card h3 {
+            font-family: 'Inknut Antiqua', serif;
+            font-weight: 700;
+            color: #183665;
+            margin-bottom: 10px;
+        }
+
+        .vision-mission-section .custom-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-banner h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-banner p {
+                font-size: 1.2rem;
+            }
+
+            .vision-mission-section .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light px-4" id="mainNavbar" style="height:15vh; border-bottom-left-radius: 3vi; border-bottom-right-radius: 3vi; background-color: transparent; transition: background-color 0.3s; width: 100%">
+        <a class="navbar-brand" href="index.html">
+            <img src="WhatsApp_Image_2025-04-28_at_14.34.16_90ad2c9c-removebg-preview.webp" alt="Transparent Sunanda Renewables Logo" id="transparentLogo" style="display: block; position: absolute; top: 0.05%; left: 1vw; height:15vh; width: 50vh; padding: 0 1vw;" loading="lazy" />
+            <img src="image-removebg-preview (1).webp" alt="Sunanda Renewables Logo" style="display: none; position: absolute; top: -0.05%; left: 1vw; height:18vh; width: 47vh; padding: 0 1vw;" id="mainLogo" loading="lazy" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-3">
+                    <a class="nav-link" href="index.html" style="position: relative; color: white;" id="homeLink">Home</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link fw-bold" href="aboutus.html" style="position: relative; color: white;" id="aboutLink">About us</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link " href="projects.html" style="position: relative; color: white;" id="portfolioLink">Portfolio</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link " href="services.html" style="position: relative; color: white;" id="servicesLink">Services</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link " href="getintouch.html" style="position: relative; color: white;" id="contactLink">Get in touch</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mb-5 position-relative hero-banner">
+        <div class="container">
+            <div class="text-white" style="z-index: 1;">
+                <h1>About Us</h1>
+                <p>Engineering India’s Green Future, One Watt at a Time</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center" style="margin-left: 0; margin-right: 0;">
+            <div class="col-md-6" style="margin-top: 8vh; z-index: 10;">
+                <h2 class="section-heading">Creating for Future</h2>
+                <h5 style="color: #fcaf17; font-style:italic; font-family: 'Inknut Antiqua', serif; font-size:medium;margin-top: 5vh;">
+                    At Sunanda Renewable Energy Pvt. Ltd., we are building the future of clean, sustainable, and smart power.
+                </h5>
+                <p style="text-align: justify; margin-top: 3vh;">
+                    At Sunanda Renewable Energy Pvt. Ltd., we are not just generating electricity – we are building a cleaner, greener, and smarter future. As a forward-thinking renewable energy company, our mission is to revolutionize how power is produced and delivered, enabling industries and communities to transition to sustainable energy effortlessly.
+                </p>
+                <p style="text-align: justify;">We specialize in clean energy generation through reliable, high-efficiency solar and wind power systems. What sets us apart is our zero-infrastructure model for clients there’s no need to install solar panels or windmills on your premises. Through government-authorized transmission lines, we deliver green electricity directly to your site, eliminating the need for land, equipment, or operational hassle on your end.</p>
+                <p style="text-align: justify;">From power purchase agreements and government compliance to generation, storage (BESS), and transmission, we handle the entire process with precision. Our goal is to ensure our clients receive uninterrupted, cost-effective, and environmentally responsible energy solutions, tailored to meet their specific power needs.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="assets/b0710f88-52bb-4f75-9403-b0fe01bef8bd.png" class="img-fluid rounded" style="z-index: -5;" alt="Solar Panel" loading="lazy" id="solarPanelImage" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h4 class="execution-title">⚙ Our Execution Process</h4>
+        <p class="execution-subtitle">
+            <h5 style="color: #183665; font-family: 'Inknut Antiqua', serif; font-weight: 800;">Our Process</h5>
+            We begin every renewable energy project with a detailed requirement evaluation to understand your energy needs and sustainability goals. After this, we handle all government licensing, ensuring full regulatory compliance before moving into the design and construction of customized solar or renewable energy systems.
+
+            <h5 style="color: #183665; font-family: 'Inknut Antiqua', serif; font-weight: 800;margin-top: 15px;">From Testing to Partnership </h5>
+            <p>Once built, each system undergoes thorough testing and commissioning to ensure peak performance. We finalize the project with a Power Purchase Agreement (PPA), establishing a long-term energy partnership that delivers reliable, clean power tailored to your needs.
+            </p>
+        </p>
+    </div>
+    <div class="container-fluid" id="desktop">
+        <div class="void" id="desktop">
+            <div class="crop">
+                <ul id="card-list" style="--count: 6;">
+                    <li>
+                        <div class="card" style="background-color: #183665;">
+                            <span class="model-name" >Monitoring & Support</span>
+                            <span style="color: white; font-size: medium; font-style: italic;">Ongoing system monitoring and maintenance support</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card"style="background-color: #183665;">
+                            <span class="model-name">Testing & Commissioning</span>
+                            <span style="color: white; font-size: medium; font-style: italic;">Ensuring systems run efficiently before going live</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-fluid">
+                            <div class="card"style="background-color: #183665;">
+                                <span class="model-name">Design & Construction</span>
+                                <span style="color: white; font-size: medium; font-style: italic;">Executing the solar or renewable infrastructure setup</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card"style="background-color: #183665;">
+                            <span class="model-name">Government Licensing</span>
+                            <span style="color: white; font-size: medium; font-style: italic;">Obtaining required permits and approvals</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card"style="background-color: #183665;">
+                            <span class="model-name">PPA Signing</span>
+                            <span style="color: white; font-size: medium; font-style: italic;">Signing the Power Purchase Agreement to proceed</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card"style="background-color: #183665;">
+                            <span class="model-name">Requirement Evaluation</span>
+                            <span style="color: white; font-size: medium; font-style: italic;">Understanding the client's renewable energy needs & goals</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="last-circle"></div>
+                <div class="second-circle"></div>
+                <div class="center-circle"></div>
+                <div class="rays">
+                    <div class="ray" style="transform: rotate(0deg); "></div>
+                    <div class="ray" style="transform: rotate(20deg);"></div>
+                    <div class="ray" style="transform: rotate(40deg);"></div>
+                    <div class="ray" style="transform: rotate(60deg);"></div>
+                    <div class="ray" style="transform: rotate(80deg);"></div>
+                    <div class="ray" style="transform: rotate(100deg);"></div>
+                    <div class="ray" style="transform: rotate(120deg);"></div>
+                    <div class="ray" style="transform: rotate(140deg);"></div>
+                    <div class="ray" style="transform: rotate(160deg);"></div>
+                    <div class="ray" style="transform: rotate(180deg);"></div>
+                    <div class="ray" style="transform: rotate(200deg);"></div>
+                    <div class="ray" style="transform: rotate(220deg);"></div>
+                    <div class="ray" style="transform: rotate(240deg);"></div>
+                    <div class="ray" style="transform: rotate(260deg);"></div>
+                    <div class="ray" style="transform: rotate(280deg);"></div>
+                    <div class="ray" style="transform: rotate(300deg);"></div>
+                    <div class="ray" style="transform: rotate(320deg);"></div>
+                    <div class="ray" style="transform: rotate(340deg);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section vision-mission-section" id="BLINK">
+        <h2>Vision and Mission</h2>
+        <p>We’re committed to innovation, growth, and meaningful impact through purpose-driven goals.</p>
+
+        <div class="cards">
+            <div class="custom-card vision">
+                <i class="bi bi-eye-fill"></i>
+                <h3>Vision</h3>
+                <p>To build a future where technology empowers every individual and community to thrive sustainably.</p>
+            </div>
+
+            <div class="custom-card mission">
+                <i class="bi bi-bullseye"></i>
+                <h3>Mission</h3>
+                <p>Deliver high-impact renewable energy solutions and services to accelerate sustainable development.</p>
+            </div>
+
+            <div class="custom-card values">
+                <i class="bi bi-gem"></i>
+                <h3>Values</h3>
+                <p>Innovation, integrity, inclusivity, and excellence guide all our decisions and strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-sunada text-white">
+        <div class="footer-container" style="margin-left: 5vw; margin-right: 5vw;">
+            <div class="footer-row row">
+
+                <div class="col-sm mt-3">
+                    <img src="WhatsApp_Image_2025-04-28_at_14.34.16_90ad2c9c-removebg-preview.webp" alt="Sunanda Logo" class="footer-logo" id="footersunada" style="margin-top: -2vw;" loading="lazy">
+
+                   
+               <a href="tel:+914031780099" aria-label="Call 040 31780099">
+  <div class="d-flex">
+    <div>
+      <i class="bi bi-telephone"></i>
+    </div>
+    <p class="mb-0 ms-2">
+      040 – 31780099
+    </p>
+  </div>
+</a>
+               <a href="https://wa.me/919542226777" target="_blank" aria-label="Chat on WhatsApp with +91 954 222 6777">
+  <div class="d-flex">
+    <div>
+      <i class="bi bi-whatsapp"></i>
+    </div>
+    <p class="mb-0 ms-2">
+      +91 954 222 6777
+    </p>
+  </div>
+</a>
+  <a href="mailto:info@sunandagroups.com" aria-label="Email Sunanda Renewables at info@sunandagroups.com">
+                <div class="d-flex">
+                  <i class="bi bi-envelope"></i>
+                    <p style="margin-left: 0.5vw;"><strong>Email:</strong> info@sunandagroups.com</p>
+                </div></a>
+                    <div class="footer-social-icons w-100 d-flex" style="margin-top: -1vh;">
+                        <a href="https://www.linkedin.com/in/sunanda-groups-3479b3351/" class="me-3" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn profile"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://www.instagram.com/sunanda_renewableenergies/" class="me-3" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://x.com/Sunanda_Renew" target="_blank" rel="noopener noreferrer" aria-label="Visit our X (formerly Twitter) profile"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm mt-3 footer-quick-links" id="quickLinks">
+                    <h5 id="qui">QUICK LINKS</h5>
+                    <ul class="list-unstyled" id="quickLinksList">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="getintouch.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm" id="addresscolumn" style="margin-top: 5%;">
+                    <div class="d-flex align-items-start contact-item" style="cursor: pointer;" id="dlex"
+                         onclick="window.open('https://www.google.com/maps/search/SUNANDA+RENEWABLE+ENERGIES+PVT+LTD+8-2-626%2F2,+Block-B,+3rd+Floor,+Brk+Building,+Banjara+Hills,+Hyderabad,+Telangana,+India,+500034')" role="link" aria-label="Get directions to our Corporate office">
+                        <i class="bi bi-geo-alt-fill contact-icon fs-4 me-3"></i>
+                        <div style="margin-left: -0.7vw;">
+                            <h6>Corporate office</h6>
+                            <p>
+                                #8-2-626/2, Block-B, 3rd Floor, Brk Building, Banjara Hills, Hyderabad, Telangana, India, 500034.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm mt-3 position-relative">
+                    <div class="footer-overlay position-absolute top-0 start-0 w-100 h-100 rounded-3" style="background: rgba(0,0,0,0.15); z-index:0;"></div>
+                    <div class="position-relative" style="z-index:1;">
+                        <div class="d-flex mb-2">
+                            <a href="getintouch.html" aria-label="Go to Contact Us page"><i class="fas fa-long-arrow-right fa-lg footer-contact-icon me-2"></i></a>
+                            <h5>Stay Connected</h5>
+                        </div>
+                        <form id="footerContactForm" action="https://formspree.io/f/xeorqdne" method="POST">
+                            <input type="hidden" name="About us" value="New submission from Sunanda Renewables website">
+                            <div class="mb-2">
+                                <input type="text" class="footer-input form-control" placeholder="Name" id="footerFirstName" required aria-required="true">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="mb-2">
+                                <input type="email" class="footer-input form-control" placeholder="Email" id="footerEmail" required aria-required="true">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div id="footer-form-response" class="mt-2"></div>
+                            <button class="footer-subscribe-btn btn w-100" type="submit" id="footerSubmitBtn" disabled>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        // --- Navbar Logic ---
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('mainNavbar');
+            const homeLink = document.getElementById('homeLink');
+            const servicesLink = document.getElementById('servicesLink');
+            const portfolioLink = document.getElementById('portfolioLink');
+            const aboutLink = document.getElementById('aboutLink');
+            const contactLink = document.getElementById('contactLink');
+            const links = [homeLink, servicesLink, portfolioLink, aboutLink, contactLink];
+            const mainLogo = document.getElementById('mainLogo');
+            const transparentLogo = document.getElementById('transparentLogo');
+
+            if (window.scrollY > 80) {
+                navbar.style.backgroundColor = 'white';
+                links.forEach(link => {
+                    link.style.color = 'black';
+                    link.style.transition = 'color 0.3s ease-in-out';
+                    link.style.fontFamily = 'Rowdies-Light';
+                });
+                mainLogo.style.display = 'block';
+                transparentLogo.style.display = 'none';
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+                links.forEach(link => {
+                    link.style.color = 'white';
+                    link.style.transition = 'color 0.3s ease-in-out';
+                    link.style.fontFamily = 'Rowdies-Light';
+                });
+                mainLogo.style.display = 'none';
+                transparentLogo.style.display = 'block';
+            }
+        });
+
+        function toggleNavbarLogoSize() {
+            const mainLogo = document.getElementById('mainLogo');
+            const transparentLogo = document.getElementById('transparentLogo');
+
+            if (window.innerWidth <= 600) {
+                if (mainLogo) {
+                    mainLogo.style.height = '15vh';
+                    mainLogo.style.width = '70vw';
+                    mainLogo.style.marginLeft = '-8vw';
+                }
+                if (transparentLogo) {
+                    transparentLogo.style.height = '12vh';
+                    transparentLogo.style.width = '67vw';
+                }
+            } else {
+                if (mainLogo) {
+                    mainLogo.style.height = '18vh';
+                    mainLogo.style.width = '47vh';
+                    mainLogo.style.top = '-1vh';
+                    mainLogo.style.marginLeft = '1vw';
+                }
+                if (transparentLogo) {
+                    transparentLogo.style.height = '15vh';
+                    transparentLogo.style.width = '50vh';
+                    transparentLogo.style.marginTop = '0vh';
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', toggleNavbarLogoSize);
+        window.addEventListener('resize', toggleNavbarLogoSize);
+        document.querySelector('.navbar').classList.add('fixed-top', 'shadow-sm');
+
+
+        // --- "Creating for Future" Image Animation ---
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const solarPanelImage = document.getElementById('solarPanelImage');
+                if (solarPanelImage) {
+                    solarPanelImage.classList.add('loaded');
+                }
+            }, 300);
+        });
+
+        // Mouse movement effect
+        const imageContainer = document.getElementById('solarPanelImage');
+        if (imageContainer) { // Check if element exists before adding listener
+            document.addEventListener('mousemove', (e) => {
+                if (imageContainer.classList.contains('loaded')) {
+                    const rect = imageContainer.getBoundingClientRect();
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+                    const distanceX = e.clientX - centerX;
+                    const distanceY = e.clientY - centerY;
+                    const moveX = distanceX / 10;
+                    const moveY = distanceY / 10;
+                    imageContainer.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+                }
+            });
+        }
+
+
+        // --- 3D Execution Process Desktop Toggle ---
+        function toggleExecutionProcessDisplay() {
+            const desktopContainer = document.getElementById('desktop');
+            const blink = document.getElementById('BLINK');
+            if (desktopContainer) {
+                if (window.innerWidth >= 1000) {
+                    desktopContainer.style.display = 'block';
+                    if (blink) blink.style.marginTop = '-25vw';
+                } else {
+                    desktopContainer.style.display = 'none';
+                    if (blink) blink.style.marginTop = '1vh';
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', toggleExecutionProcessDisplay);
+        window.addEventListener('resize', toggleExecutionProcessDisplay);
+
+        // --- Footer Responsive Logic ---
+        function toggleFooterContainer() {
+            const footerSunada = document.getElementById('footersunada');
+            const addressColumn = document.getElementById('addresscolumn');
+            const dlex = document.getElementById('dlex');
+
+            if (window.innerWidth <= 500) {
+                if (footerSunada) {
+                    footerSunada.style.height = '10vh';
+                    footerSunada.style.width = '50vw';
+                    footerSunada.style.marginLeft = '-3vw';
+                }
+                if (addressColumn) addressColumn.style.marginLeft = '0vw';
+            } else {
+                if (footerSunada) {
+                    footerSunada.style.height = '6vw';
+                    footerSunada.style.width = '16vw';
+                    footerSunada.style.marginLeft = '0vw';
+                }
+                if (addressColumn) addressColumn.style.marginLeft = '-4vw';
+                if (dlex) dlex.style.marginLeft = '-4vw';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', toggleFooterContainer);
+        window.addEventListener('resize', toggleFooterContainer);
+
+
+        // --- Form Validation Logic ---
+        /**
+         * Validates a single input field.
+         * @param {HTMLElement} inputElement The input field to validate.
+         * @param {boolean} showError Whether to display the error message immediately.
+         * @returns {boolean} True if the field is valid, false otherwise.
+         */
+        function validateFormField(inputElement, showError = true) {
+            let isValid = true;
+            const value = inputElement.value.trim();
+            const feedbackDiv = inputElement.nextElementSibling; // Get the next sibling (invalid-feedback div)
+
+            // Clear previous invalid state and message initially
+            inputElement.classList.remove('is-invalid');
+            if (feedbackDiv && feedbackDiv.classList.contains('invalid-feedback')) {
+                feedbackDiv.textContent = '';
+            }
+
+            if (inputElement.id === 'firstName' || inputElement.id === 'footerFirstName') {
+                const nameRegex = /^[a-zA-Z\s]+$/;
+                if (value === '') {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Name is required.';
+                    }
+                } else if (!nameRegex.test(value)) {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Only letters and spaces are allowed.';
+                    }
+                }
+            } else if (inputElement.id === 'lastName') { // Optional field
+                const nameRegex = /^[a-zA-Z\s]*$/;
+                if (value !== '' && !nameRegex.test(value)) {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Only letters and spaces are allowed.';
+                    }
+                }
+            } else if (inputElement.id === 'email' || inputElement.id === 'footerEmail') {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (value === '') {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Email is required.';
+                    }
+                } else if (!emailRegex.test(value)) {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Please enter a valid email address.';
+                    }
+                }
+            } else if (inputElement.id === 'phone') {
+                const phoneRegex = /^\d{10}$/; // Basic 10-digit phone number validation
+                if (value === '') {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Phone number is required.';
+                    }
+                } else if (!phoneRegex.test(value)) {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Please enter a valid 10-digit phone number.';
+                    }
+                }
+            } else if (inputElement.id === 'message') {
+                if (value === '') {
+                    isValid = false;
+                    if (showError) {
+                        inputElement.classList.add('is-invalid');
+                        if (feedbackDiv) feedbackDiv.textContent = 'Message cannot be empty.';
+                    }
+                }
+            }
+            return isValid;
+        }
+
+        /**
+         * Checks if all required fields have content and all *currently shown* fields are valid,
+         * then enables/disables the button.
+         * @param {string} formId The ID of the form.
+         * @param {string} buttonId The ID of the submit button.
+         * @returns {boolean} True if the form can be submitted, false otherwise.
+         */
+        function checkFormValidityAndToggleButton(formId, buttonId) {
+            const form = document.getElementById(formId);
+            const button = document.getElementById(buttonId);
+            let allRequiredFieldsHaveContent = true;
+            let allVisibleFieldsAreValid = true; // Checks validity only for fields with content or that have been blurred
+
+            const requiredInputs = form.querySelectorAll('input[required], textarea[required]');
+
+            requiredInputs.forEach(input => {
+                if (input.value.trim() === '') {
+                    allRequiredFieldsHaveContent = false;
+                }
+                // Validate for content even if not showing error yet
+                if (!validateFormField(input, false)) { // Don't show error immediately, just check validity
+                    allVisibleFieldsAreValid = false;
+                }
+            });
+
+            // For optional fields like lastName, only validate if they have content
+            const optionalLastName = form.querySelector('#lastName');
+            if (optionalLastName && optionalLastName.value.trim() !== '') {
+                if (!validateFormField(optionalLastName, false)) {
+                    allVisibleFieldsAreValid = false;
+                }
+            }
+
+            // Button is enabled only if all required fields have content AND all fields are valid
+            button.disabled = !(allRequiredFieldsHaveContent && allVisibleFieldsAreValid);
+            return (allRequiredFieldsHaveContent && allVisibleFieldsAreValid);
+        }
+
+        /**
+         * Adds input and blur event listeners to form fields for real-time validation feedback.
+         * @param {string} formId The ID of the form.
+         * @param {string} buttonId The ID of the submit button.
+         */
+        function addValidationListeners(formId, buttonId) {
+            const form = document.getElementById(formId);
+            if (!form) return;
+
+            const inputs = form.querySelectorAll('.form-control');
+            inputs.forEach(input => {
+                // On blur, validate the field and show error if invalid
+                input.addEventListener('blur', () => {
+                    validateFormField(input, true); // Show error on blur
+                    checkFormValidityAndToggleButton(formId, buttonId);
+                });
+
+                // On input, clear any existing error for that field, but re-evaluate button state
+                input.addEventListener('input', () => {
+                    input.classList.remove('is-invalid');
+                    const feedbackDiv = input.nextElementSibling;
+                    if (feedbackDiv && feedbackDiv.classList.contains('invalid-feedback')) {
+                        feedbackDiv.textContent = '';
+                    }
+                    checkFormValidityAndToggleButton(formId, buttonId); // Re-check button state on input
+                });
+            });
+
+            // Initial check on page load to set the button state (without showing errors)
+            document.addEventListener('DOMContentLoaded', () => checkFormValidityAndToggleButton(formId, buttonId));
+        }
+
+        // Attach listeners for both forms
+        addValidationListeners('contactForm', 'sendQueryBtn');
+        addValidationListeners('footerContactForm', 'footerSubmitBtn');
+
+
+        // --- Form Submission Logic ---
+        async function handleFormSubmission(e, formId, buttonId, nameFieldId, emailFieldId, phoneFieldId, messageFieldId, responseDivId, isFooterForm) {
+            e.preventDefault();
+            const button = document.getElementById(buttonId);
+            const responseDiv = document.getElementById(responseDivId);
+
+            responseDiv.innerHTML = ''; // Clear previous response messages
+
+            // Perform full validation on submit, *showing errors*
+            const form = document.getElementById(formId);
+            let formIsValidOnSubmit = true;
+            form.querySelectorAll('.form-control').forEach(input => {
+                if (!validateFormField(input, true)) { // Pass true to show errors on all invalid fields
+                    formIsValidOnSubmit = false;
+                }
+            });
+
+            if (!formIsValidOnSubmit) {
+                responseDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">Please correct the errors in the form.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+                return;
+            }
+
+            button.disabled = true;
+            button.textContent = 'Sending...';
+
+            const nameValue = document.getElementById(nameFieldId).value.trim();
+            const emailValue = document.getElementById(emailFieldId).value.trim();
+            const phoneValue = isFooterForm ? '9021' : document.getElementById(phoneFieldId).value.trim();
+            const messageValue = isFooterForm ? 'footer form subscription' : document.getElementById(messageFieldId).value.trim();
+            const lastNameValue = (isFooterForm || !document.getElementById('lastName')) ? '' : document.getElementById('lastName').value.trim(); // Handle optional lastName
+
+            const payloadName = isFooterForm ? nameValue : `${nameValue} ${lastNameValue}`.trim();
+
+            try {
+                const response = await fetch('https://website-2-2x6f.onrender.com/send_email', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name: payloadName, email: emailValue, phone: phoneValue, message: messageValue })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    responseDiv.innerHTML = `<div class="alert alert-success alert-dismissible fade show mt-3" role="alert">Message sent successfully! We will get back to you soon.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+                    document.getElementById(formId).reset();
+                    // Manually clear validation styles after reset
+                    document.getElementById(formId).querySelectorAll('.form-control').forEach(input => {
+                        input.classList.remove('is-invalid');
+                        const feedback = input.nextElementSibling;
+                        if (feedback && feedback.classList.contains('invalid-feedback')) feedback.textContent = '';
+                    });
+                } else {
+                    throw new Error(data.error || 'Failed to send message');
+                }
+            } catch (error) {
+                responseDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">Error: ${error.message}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+            } finally {
+                button.disabled = false;
+                button.textContent = isFooterForm ? 'Send' : 'Send Your Query';
+                checkFormValidityAndToggleButton(formId, buttonId); // Re-evaluate button state
+            }
+        }
+
+        // Attach submit listeners
+        document.getElementById('contactForm').addEventListener('submit', (e) =>
+            handleFormSubmission(e, 'contactForm', 'sendQueryBtn', 'firstName', 'email', 'phone', 'message', 'form-response', false)
+        );
+
+        document.getElementById('footerContactForm').addEventListener('submit', (e) =>
+            handleFormSubmission(e, 'footerContactForm', 'footerSubmitBtn', 'footerFirstName', 'footerEmail', 'phone', 'message', 'footer-form-response', true)
+        );
+
+
+        // --- Bottom Sheet (Social Media) Logic ---
+        function openBottomSheet() {
+            const bottomSheet = document.getElementById('bottomSheet');
+            if (bottomSheet) {
+                bottomSheet.classList.remove('d-none');
+                bottomSheet.classList.add('d-block');
+                document.querySelector('[onclick="openBottomSheet()"]').setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        document.addEventListener('click', function (event) {
+            const bottomSheet = document.getElementById('bottomSheet');
+            const openButton = document.querySelector('[onclick="openBottomSheet()"]');
+            if (bottomSheet && openButton && !bottomSheet.contains(event.target) && !openButton.contains(event.target)) {
+                bottomSheet.classList.remove('d-block');
+                bottomSheet.classList.add('d-none');
+                openButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

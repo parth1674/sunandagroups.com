@@ -1,0 +1,72 @@
+
+.footer-sunada {
+  background: url('/whychooseusbg.webp') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 3rem 0;
+}
+
+.footer-logo {
+  height: 6vw;
+  width: 16vw;
+  margin-left: -0.5vw;
+  margin-top: -2vh;
+}
+
+.footer-sunada h5 {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.footer-sunada a {
+  color: #f2f2f2;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-sunada a:hover {
+  text-decoration: underline #fcaf17;
+}
+
+.footer-input {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  color: black;
+  padding: 10px;
+}
+
+.footer-input::placeholder {
+  color: #575555;
+}
+
+.footer-subscribe-btn {
+  background-color: #ffe08c;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.footer-subscribe-btn:hover {
+  background-color: #ffd24d;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+  color: #ffe08c;
+}
+
+.footer-contact-icon {
+  margin-top: 3vh;
+}
+
+.footer-location-text {
+  margin-left: 1vw;
+}
